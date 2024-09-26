@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mario Site</title>
+</head>
+
+<body>
+
+    <div class="mascara-formulario" onclick="esconderform()"></div>
+
+    <div class="cogumelo">
+        <img src="./img/cogumelo.png" alt="logo-cogumelo">
+        <a>Home</a>
+        <a href="nosso.serviço.html">Nosso serviço</a>
+        <a>Fale conosco</a>
+
+    </div>
+
+
+
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img src="./img/logo.png" alt="logo do mario" class="logo-mario">
+            <h1>Somos a solução para o seu problema, Mario e Luigi estão a disposição,
+                Já perdeu a cabeça com problemas de encanamento ? Fique tranquilo(a),
+                pois em alguns minutos após o chamado, estaremos em sua residencia
+                prontos para servi-los e
+                solucionarmos o seu caso.</h1>
+
+            <button onclick="mostrarform()">Entre em contato</button>
+        </div>
+
+        <div>
+            <img src="./img/mario.png" alt="mario e luigi" class="mario-e-luigi">
+        </div>
+    </div>
+
+    </div>
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+
+    <a href="https://api.whatsapp.com/send?phone=5592993940737&text=Ol%C3%A1,%20preciso%20de%20ajuda%20dos%20irm%C3%A3os%20Mario%20e%20Luigi%20SOS%20!!"
+        class="link-zap">
+        <img src="./img/whatsapp.png" alt="link para o whatsapp">
+    </a>
+
+
+    <form class="formulario-orçamento"
+    action="https://formcarry.com/s/3VDNLXA_P5j"
+    method="POST"
+    enctype="multipart/form-data">
+        <input placeholder="Digite seu Nome" type="text" name="Nome">
+        <input placeholder="Digite seu telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite seu problema" name="problema"></textarea>
+        <button type="submit">Peça seu orçamento</button>
+
+    </form>
+
+
+
+</body>
+<script src="scripts.js"></script>
+
+</html>

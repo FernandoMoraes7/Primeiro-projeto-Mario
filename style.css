@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo-mario {
+    height: 300px;
+
+}
+
+.mario-e-luigi {
+    height: 500px;
+}
+
+
+
+button {
+    color: white;
+    background-color: #C51111;
+    border-radius: 3px;
+    border: none;
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+
+.caixa-mae button:hover {
+
+    background-color: greenyellow;
+    font-size: 25px;
+    transition: 1s ease-in-out;
+}
+
+
+body {
+
+    height: 100vh;
+
+}
+
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 100px;
+
+}
+
+.caixa-principal {
+
+    width: 70%;
+}
+
+.caixa-video {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+
+}
+
+.link-zap img {
+
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.cogumelo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 45px;
+}
+
+
+.cogumelo img {
+    height: 80px;
+
+
+}
+
+.cogumelo a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.cogumelo a:hover {
+    color: red;
+    font-size: 30px;
+    transition: 0, 9s ease-in-out;
+
+}
+
+.formulario-orçamento {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    top: 20%;
+    left: -160px;
+    transform: translateX(-50%);
+    flex-direction: column;
+    position: fixed;
+    padding: 20px;
+    border-radius: 8px;
+    transition: left 1s ease-in-out;
+}
+
+
+
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    outline-color: #18d80f;
+
+}
+
+textarea {
+    height: 180px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    outline-color: #18d80f;
+
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+
+
+}
+
+
+@media (max-width: 1100px){
+    p {
+        display: none;
+
+    }
+     .caixa-mae{
+       flex-direction: column;
+       padding: 10px;
+
+     }
+
+     .caixa-principal{
+        display: flex;
+        flex-direction: column;
+       justify-content: flex-start;
+     }
+    .mario-e-luigi{
+
+        width: 50vw;
+        height: auto;
+
+    }
+    
+    .cogumelo{
+      display: none;
+
+
+    }
+
+    .cogumelo a {
+
+        font-size: 20px;
+
+
+    }
+    .cogumelo img{
+         display: none;
+
+    }
+
+    .logo-mario{
+        display: none;
+    }
+}  
+
